@@ -19,7 +19,7 @@ def teardown_db(exception):
 
 @app.route('/3-hbnb/')
 def hbnb_filters(the_id=None):
-    """2-hbnb route"""
+    """3-hbnb route"""
     state_objs = storage.all('State').values()
     states = dict([state.name, state] for state in state_objs)
     amens = storage.all('Amenity').values()
